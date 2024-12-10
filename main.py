@@ -349,10 +349,11 @@ def main(args):
             model, criterion, postprocessors, data_loader_val, base_ds, device, args.output_dir
         )
 
-        log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
-                     **{f'test_{k}': v for k, v in test_stats.items()},
-                     'epoch': epoch,
-                     'n_parameters': n_parameters}
+        log_stats = {**{f'train_{k}': v for k, v in train_stats.items()}, # All key-value pairs in train_stats are added to log_stats with the key prefixed by 'train_'
+                     **{f'test_{k}': v for k, v in test_stats.items()}, # All key-value pairs in test_stats are added to log_stats with the key prefixed by 'test_'
+                                                                        # ** is used to unpack the dictionary into key-value pairs
+                     'epoch': epoch, # Add the epoch number to log_stats
+                     'n_parameters': n_parameters} # Add the number of parameters to log_stats
         # Log metrics to WandB
         wandb.log(log_stats)
 
