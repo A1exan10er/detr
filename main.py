@@ -353,6 +353,8 @@ def main(args):
                      **{f'test_{k}': v for k, v in test_stats.items()},
                      'epoch': epoch,
                      'n_parameters': n_parameters}
+        # Log metrics to WandB
+        wandb.log(log_stats)
 
         if args.output_dir and utils.is_main_process():
             with (output_dir / "log.txt").open("a") as f:
@@ -368,16 +370,6 @@ def main(args):
                     for name in filenames:
                         torch.save(coco_evaluator.coco_eval["bbox"].eval,
                                    output_dir / "eval" / name)
-        '''
-        # Log metrics to WandB
-        wandb.log({  # <--- WandB Logging
-            'epoch': epoch,
-            'train_loss': train_stats['loss'],
-            'train_accuracy': train_stats.get('accuracy', 0),
-            'val_loss': test_stats['loss'],
-            'val_accuracy': test_stats.get('accuracy', 0),
-            'learning_rate': optimizer.param_groups[0]["lr"]
-        })'''
 
     total_time = time.time() - start_time
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))
