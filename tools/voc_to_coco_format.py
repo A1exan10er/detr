@@ -94,10 +94,12 @@ def read_and_convert_to_coco(input_file, output_file):
             image_id = len(image_id_map) + 1
             image_id_map[file_name] = image_id
 
+            file_name_with_extension = f"{file_name}.png"  # File extension needs to be added
+
             # Add the image metadata
             coco_structure["images"].append({
                 "license": 1,
-                "file_name": file_name,
+                "file_name": file_name_with_extension,
                 "coco_url": "", # Change this if uploading images to a server
                 "height": 1024,
                 "width": 1280,
@@ -125,10 +127,10 @@ def read_and_convert_to_coco(input_file, output_file):
         json.dump(coco_structure, output, indent=4)
 
 # File paths
-# input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images/bbox_training.txt"
-# output_file = "bbox_training_coco_9248.json"
-input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images/bbox_val.txt"
-output_file = "bbox_val_coco_9248.json"
+input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images/bbox_training.txt"
+output_file = "bbox_training_coco_9248.json"
+# input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images/bbox_val.txt"
+# output_file = "bbox_val_coco_9248.json"
 
 # Convert the file to COCO format
 read_and_convert_to_coco(input_file, output_file)
