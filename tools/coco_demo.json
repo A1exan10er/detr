@@ -1,0 +1,242 @@
+{
+    "info": {
+        "description": "COCO 2017 Dataset",
+        "url": "http://cocodataset.org",
+        "version": "1.0",
+        "year": 2017,
+        "contributor": "COCO Consortium",
+        "date_created": "2017/09/01"
+    },
+    "licenses": [
+        {
+            "url": "http://creativecommons.org/licenses/by-nc-sa/2.0/",
+            "id": 1,
+            "name": "Attribution-NonCommercial-ShareAlike License"
+        },
+        {
+            "url": "http://creativecommons.org/licenses/by-nc/2.0/",
+            "id": 2,
+            "name": "Attribution-NonCommercial License"
+        },
+        {
+            "url": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+            "id": 3,
+            "name": "Attribution-NonCommercial-NoDerivs License"
+        },
+        {
+            "url": "http://creativecommons.org/licenses/by/2.0/",
+            "id": 4,
+            "name": "Attribution License"
+        },
+        {
+            "url": "http://creativecommons.org/licenses/by-sa/2.0/",
+            "id": 5,
+            "name": "Attribution-ShareAlike License"
+        },
+        {
+            "url": "http://creativecommons.org/licenses/by-nd/2.0/",
+            "id": 6,
+            "name": "Attribution-NoDerivs License"
+        },
+        {
+            "url": "http://flickr.com/commons/usage/",
+            "id": 7,
+            "name": "No known copyright restrictions"
+        },
+        {
+            "url": "http://www.usa.gov/copyright.shtml",
+            "id": 8,
+            "name": "United States Government Work"
+        }
+    ],
+    "images": [
+        {
+            "license": 4,
+            "file_name": "000000397133.jpg",
+            "coco_url": "http://images.cocodataset.org/val2017/000000397133.jpg",
+            "height": 427,
+            "width": 640,
+            "date_captured": "2013-11-14 17:02:52",
+            "flickr_url": "http://farm7.staticflickr.com/6116/6255196340_da26cf2c9e_z.jpg",
+            "id": 397133
+        },
+        {
+            "license": 1,
+            "file_name": "000000037777.jpg",
+            "coco_url": "http://images.cocodataset.org/val2017/000000037777.jpg",
+            "height": 230,
+            "width": 352,
+            "date_captured": "2013-11-14 20:55:31",
+            "flickr_url": "http://farm9.staticflickr.com/8429/7839199426_f6d48aa585_z.jpg",
+            "id": 37777
+        },
+        {
+            "license": 2,
+            "file_name": "000000015335.jpg",
+            "coco_url": "http://images.cocodataset.org/val2017/000000015335.jpg",
+            "height": 480,
+            "width": 640,
+            "date_captured": "2013-11-25 14:00:10",
+            "flickr_url": "http://farm6.staticflickr.com/5533/10257288534_c916fafd78_z.jpg",
+            "id": 15335
+        }
+    ],
+    "annotations": [
+        {
+            "segmentation": [
+                [
+                    506.31,
+                    423.32,
+                    510.03,
+                    423.01,
+                    510.45,
+                    423.01
+                ]
+            ],
+            "area": 702.1057499999998,
+            "iscrowd": 0,
+            "image_id": 289343,
+            "bbox": [
+                473.07,
+                395.93,
+                38.65,
+                28.67
+            ],
+            "category_id": 18,
+            "id": 1768
+        },
+        {
+            "segmentation": [
+                [
+                    289.74,
+                    443.39
+                ]
+            ],
+            "area": 27718.476299999995,
+            "iscrowd": 0,
+            "image_id": 61471,
+            "bbox": [
+                272.1,
+                200.23,
+                151.97,
+                279.77
+            ],
+            "category_id": 18,
+            "id": 1773
+        },
+        {
+            "segmentation": [
+                [
+                    147.76
+                ]
+            ],
+            "area": 78969.31690000003,
+            "iscrowd": 0,
+            "image_id": 472375,
+            "bbox": [
+                124.71,
+                196.18,
+                372.85,
+                356.81
+            ],
+            "category_id": 18,
+            "id": 2551
+        },
+        {
+            "segmentation": [
+                [
+                    203.4,
+                    194.98,
+                    190.45,
+                    211.82,
+                    233.2,
+                    205.34
+                ]
+            ],
+            "area": 108316.66515000002,
+            "iscrowd": 0,
+            "image_id": 520301,
+            "bbox": [
+                112.71,
+                154.82,
+                367.29,
+                479.35
+            ],
+            "category_id": 18,
+            "id": 3186
+        },
+        {
+            "segmentation": [
+                [
+                    213.72,
+                    229.78,
+                    200.61,
+                    248.93
+                ]
+            ],
+            "area": 75864.53530000002,
+            "iscrowd": 0,
+            "image_id": 579321,
+            "bbox": [
+                200.61,
+                89.65,
+                400.22,
+                251.02
+            ],
+            "category_id": 18,
+            "id": 3419
+        }
+    ],
+    "categories": [
+        {
+            "supercategory": "person",
+            "id": 1,
+            "name": "person"
+        },
+        {
+            "supercategory": "vehicle",
+            "id": 2,
+            "name": "bicycle"
+            },
+        {
+            "supercategory": "vehicle",
+            "id": 3,
+            "name": "car"
+        },
+        {
+            "supercategory": "vehicle",
+            "id": 4,
+            "name": "motorcycle"
+        },
+        {
+            "supercategory": "vehicle",
+            "id": 5,
+            "name": "airplane"
+        },
+        {
+            "supercategory": "vehicle",
+            "id": 6,
+            "name": "bus"
+        },
+        {
+            "supercategory": "vehicle",
+            "id": 7,
+            "name": "train"
+        },
+        {
+            "supercategory": "vehicle",
+            "id": 8,
+            "name": "truck"
+        },
+        {
+            "supercategory": "vehicle",
+            "id": 9,
+            "name": "boat"
+        },
+        {
+            "supercategory": "outdoor",
+            "id": 10,
+            "name": "traffic light"
+        }
+    ]
+}
