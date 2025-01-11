@@ -125,12 +125,20 @@ def read_and_convert_to_coco(input_file, output_file):
     # Write the COCO structure to the output file
     with open(output_file, 'w') as output:
         json.dump(coco_structure, output, indent=4)
+    
+    print("Conversion to COCO format is complete.")
+    print("Total images:", len(coco_structure["images"]))
 
 # File paths
-input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images/bbox_training.txt"
-output_file = "bbox_training_coco_9248.json"
+# input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images/bbox_training.txt"
+# output_file = "bbox_training_coco_9248.json"
 # input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images/bbox_val.txt"
 # output_file = "bbox_val_coco_9248.json"
+input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images_46240/bbox_training.txt"
+output_file = "bbox_training_coco_46240.json"
+# input_file = "/home/tianyu/Documents/dirt_detection/DirtDetectionData/dataset_2019/training_synthetic/blended_floor_images_46240/bbox_val.txt"
+# output_file = "bbox_val_coco_46240.json"
 
 # Convert the file to COCO format
 read_and_convert_to_coco(input_file, output_file)
+
