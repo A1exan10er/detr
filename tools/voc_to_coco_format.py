@@ -21,6 +21,8 @@ categories[{
 }]
 '''
 
+# More details about COCO format and VOC format: https://roboflow.com/formats/coco-json and https://roboflow.com/formats/pascal-voc-xml
+
 
 import json
 
