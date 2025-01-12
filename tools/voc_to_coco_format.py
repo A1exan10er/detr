@@ -144,4 +144,3 @@ output_file = "bbox_training_coco_46240.json"
 # Convert the file to COCO format
 read_and_convert_to_coco(input_file, output_file)
 
-# add one line for testing

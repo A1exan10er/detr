@@ -23,5 +23,3 @@ for i in range(16):  # 000000 to 000015 (16 files)
 
 # Print the total number of copied files
 print(f"Total number of copied files: {copied_files_count}")
-
-# test line after merge 
